@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create meeting for Ciklum meeting room</title>
+        <link rel="stylesheet" href="../css/style_mulriselect.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <div id="create-meeting">
+            <div class="container">
+                <div class="error-massage container__flex">
+                    <div class="img error-massage__img"></div>
+                    <p class="text text_error error-massage__text">
+                        Fail to create an event. Time slot is already booked.
+                    </p>
+                    <button
+                        type="button"
+                        class="del-btn del-btn_error error-massage__del-btn"
+                    >
+                        X
+                    </button>
+                </div>
+                <div class="events-form container__events-form">
+                    <div
+                        class="name-event events-form__name-event container__flex"
+                    >
+                        <div class="text name-event__text">
+                            Name of the event:
+                        </div>
+                        <form action="#" method="#" class="name-event__form">
+                            <input
+                                type="text"
+                                size="25"
+                                name="textbox"
+                                value=""
+                                placeholder="Name of the event"
+                                class="text text_input name-event__text name-event__text_name"
+                            />
+                            <br />
+                        </form>
+                    </div>
+                    <div
+                        class="participants events-form__participants container__flex"
+                    >
+                        <div class="text participants__text">Participants:</div>
+                        <select
+                            class="multi custom-select__select_participants"
+                        >
+                            <option
+                                value="all-members"
+                                class="options text form__options"
+                            >
+                                All members
+                            </option>
+                            <option value="" class="options text form__options">
+                                Anna Lavrinchuk
+                            </option>
+                            <option value="" class="options text form__options">
+                                Mike Dobkin
+                            </option>
+                            <option value="" class="options text form__options">
+                                Dr. Dre
+                            </option>
+                            <option value="" class="options text form__options">
+                                Elon Reeve Musk
+                            </option>
+                            <option value="" class="options text form__options">
+                                Harvey Specter
+                            </option>
+                        </select>
+                    </div>
+                    <div class="day events-form__day container__flex">
+                        <div class="text day__text">Day:</div>
+
+                        <div class="custom-select day__custom-select">
+                            <select
+                                class="select custom-select__select custom-select__select_day"
+                            >
+                                <option
+                                    value="all-members"
+                                    class="options text custom-select__options"
+                                >
+                                    Select Day
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    Monday
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    Tuesday
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    Wednesday
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    Thursday
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    Friday
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="time events-form__time container__flex">
+                        <div class="text time__text">Time:</div>
+                        <div class="custom-select time__custom-select">
+                            <select
+                                class="select custom-select__select custom-select__select_time"
+                            >
+                                <option
+                                    value="all-members"
+                                    class="options text custom-select__options"
+                                >
+                                    Select time
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    10:00
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    11:00
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    12:00
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    13:00
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    14:00
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    15:00
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    16:00
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    17:00
+                                </option>
+                                <option
+                                    value=""
+                                    class="options text custom-select__options"
+                                >
+                                    18:00
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submit container__submit container__flex">
+                <button
+                    type="button"
+                    class="btn text submit__btn submit__btn_cancel"
+                >
+                    Cancel
+                </button>
+                <button
+                    type="button"
+                    class="btn text submit__btn submit__btn_create"
+                >
+                    Create
+                </button>
+            </div>
+        </div>
+        <script src="../scripts/data.js"></script>
+        <script src="../scripts/customSelect.js"></script>
+        <script src="../scripts/multiselect.js"></script>
+        <script src="../scripts/createMeeting.js"></script>
+    </body>
+</html>
