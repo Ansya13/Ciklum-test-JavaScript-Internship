@@ -7,6 +7,94 @@
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
+        <div class="container" id="calendar">
+            <header
+                class="header container__header container__fixed container__flex"
+            >
+                <h1 class="title header__title">Calendar</h1>
+                <div class="container__flex">
+                    <div class="custom-select header__custom-select">
+                        <select class="select form__select">
+                            <option
+                                value="all-members"
+                                class="options text form__options"
+                            >
+                                All members
+                            </option>
+                            <option value="" class="options text form__options">
+                                Anna Lavrinchuk
+                            </option>
+                            <option value="" class="options text form__options">
+                                Mykhailo Dobkin
+                            </option>
+                            <option value="" class="options text form__options">
+                                Dr. Dre
+                            </option>
+                            <option value="" class="options text form__options">
+                                Elon Reeve Musk
+                            </option>
+                            <option value="" class="options text form__options">
+                                Harvey Specter
+                            </option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn text header__btn">
+                        New event +
+                    </button>
+                </div>
+            </header>
+            <div class="calendar container__fixed">
+                <div class="calendar__days container__flex">
+                    <div class="title calendar__title calendar__title_name">
+                        Name
+                    </div>
+                    <div class="title calendar__title calendar__title_day">
+                        Mon
+                    </div>
+                    <div class="title calendar__title calendar__title_day">
+                        Tue
+                    </div>
+                    <div class="title calendar__title calendar__title_day">
+                        Wed
+                    </div>
+                    <div class="title calendar__title calendar__title_day">
+                        Thu
+                    </div>
+                    <div class="title calendar__title calendar__title_day">
+                        Fri
+                    </div>
+                </div>
+                <div class="calendar__content">
+                    <div class="calendar__time-list"></div>
+                    <div class="task calendar__tasks container__flex"></div>
+                </div>
+            </div>
+            <dialog class="del-window container__del-window">
+                <h1 class="text text_del-question question container__question">
+                    Are you sure you want to delate "<span
+                        class="event event__question"
+                    ></span
+                    >" event?
+                </h1>
+                <div class="container__flex">
+                    <button
+                        type="button"
+                        class="btn text submit__btn submit__btn_no"
+                    >
+                        No
+                    </button>
+                    <button
+                        type="button"
+                        class="btn text submit__btn submit__btn_yes"
+                    >
+                        Yes
+                    </button>
+                </div>
+            </dialog>
+        </div>
+        <script src="scripts/data.js"></script>
+        <script src="scripts/customSelect.js"></script>
+        <script src="scripts/calendar.js"></script>
         <script src="scripts/main.js"></script>
     </body>
 </html>
