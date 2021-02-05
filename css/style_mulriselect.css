@@ -59,11 +59,6 @@
 	text-align: left;
 }
 
-.multi__dropdown_toggle {
-	background-color: #dae0e5;
-
-}
-
 .multi__dropdown_toggle.multi__display::after {
 	border-color: transparent transparent #444444 transparent;
 	top: 7px;
@@ -120,14 +115,3 @@
 	justify-content: space-between;
 }
 
-.multi__li-item_selected::after {
-	position: absolute;
-	content: "";
-	top: 15px;
-	right: 12px;
-	width: 0;
-	height: 0;
-	border: 8px solid transparent;
-	border-color: #444444 transparent transparent transparent;
-	margin: 48px 0 0 11px;
-}
