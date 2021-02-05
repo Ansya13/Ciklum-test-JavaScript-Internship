@@ -1,0 +1,133 @@
+.multi_hidden {
+	display: none;
+}
+
+.multi__display {
+	color: #000;
+	padding: 8px 46px 8px 8px;
+	border: 2px solid #525252;
+	cursor: pointer;
+	box-sizing: border-box;
+	min-width: 190px;
+	height: 40px;
+	border-radius: 6px;
+	background-color: #fff;
+	margin: 48px 0 0 11px;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.multi__display::before {
+	position: absolute;
+	content: "";
+	top: 2px;
+	right: 2px;
+	border-left: 2px solid;
+	border-color: transparent transparent transparent #525252;
+	border-radius: 0px 6px 6px 0;
+	margin: 48px 0 0 11px;
+	background: #ebebeb;
+	width: 37px;
+	height: 36px;
+}
+
+.multi__display::after {
+	position: absolute;
+	content: "";
+	top: 15px;
+	right: 12px;
+	width: 0;
+	height: 0;
+	border: 8px solid transparent;
+	border-color: #444444 transparent transparent transparent;
+	margin: 48px 0 0 11px;
+}
+
+.multi__inner {
+	cursor: pointer;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 41px;
+	height: 33px;
+	min-width: 190px;
+	max-width: 200px;
+	width: auto;
+	font-weight: 500;
+	text-align: left;
+}
+
+.multi__dropdown_toggle {
+	background-color: #dae0e5;
+
+}
+
+.multi__dropdown_toggle.multi__display::after {
+	border-color: transparent transparent #444444 transparent;
+	top: 7px;
+}
+
+.multi__dropdown {
+	cursor: pointer;
+	overflow-y: auto;
+	margin-left: 10px;
+}
+
+.multi__dropdown ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0 5px;
+	min-height: 100px;
+	width: 182px;
+	position: absolute;
+	left: 14px;
+	right: 0;
+	z-index: 99;
+	font-weight: 500;
+	font-size: 15px;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.multi__li-item {
+	color: #000;
+	cursor: pointer;
+	border-top: none;
+	border-left: 2px solid;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+	border-color: #525252;
+	width: 172px;
+	padding-left: 5px;
+	background-color: #fff;
+}
+
+.multi__li-item:hover {
+	background-color: #e5e5e5;
+	opacity: 0.3;
+}
+
+.multi__li-item_selected {
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.multi__li-item_selected::after {
+	position: absolute;
+	content: "";
+	top: 15px;
+	right: 12px;
+	width: 0;
+	height: 0;
+	border: 8px solid transparent;
+	border-color: #444444 transparent transparent transparent;
+	margin: 48px 0 0 11px;
+}
