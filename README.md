@@ -1,6 +1,8 @@
 # Ciklum-test-JavaScript-Internship
 Build meeting scheduler application for one meeting room.
 
+#### [Click on me ... <img align="center" alt="HTML5" width="40px" src="https://cdn.icon-icons.com/icons2/1004/PNG/512/social_flags_logo_github_icon-icons.com_75539.png"/>][progect]
+
 ## My Task
 Create a simple meeting planning calendar for a meeting room in the office:
 * Display meetings planned;
@@ -29,3 +31,5 @@ Create a simple meeting planning calendar for a meeting room in the office:
 * The meeting can be successfully created if and only if the time slot for that day and time is free. Otherwise the error bar should be shown.
 * After successful creation of an event, the user should be transferred back to the “Calendar” screen where new event should already be displayed.
 * In order to delete a meeting user has to click the delete icon near the meeting title at “Calendar” screen and then confirm his action in a confirmation dialog.
+
+[progect]: https://ansya13.github.io/Ciklum-test-JavaScript-Internship/
